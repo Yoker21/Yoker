@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - YOKER</title>
+    <link rel="manifest" href="src/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo" data-command="GoHome">
+                <video class="logo-video" autoplay muted loop playsinline>
+                    <source src="src/assets/logo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <nav class="nav-menu">
+                <a href="men.html" class="nav-link">Men</a>
+                <a href="women.html" class="nav-link">Women</a>
+                <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+                <a href="technology.html" class="nav-link active">Technology</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn search-btn" aria-label="Search" data-command="OpenSearchOverlay">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="8" cy="8" r="6"></circle>
+                        <path d="m12 12 6 6"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn wishlist-btn" aria-label="Wishlist" data-command="OpenWishlist">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 4.6c-1.5-1.4-3.6-1.9-5.5-1.2-1.1.4-2 1.2-2.6 2.1-.6-.9-1.5-1.7-2.6-2.1-1.9-.7-4 .0-5.5 1.2-2.3 2.1-2.2 5.7.2 8.1l7.9 7.6 7.9-7.6c2.5-2.4 2.6-6 .2-8.1z"></path>
+                    </svg>
+                    <span class="cart-badge" id="wishlist-count">0</span>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Cart" data-command="OpenCart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h18l-3 12H5L2 3z"></path>
+                        <circle cx="7" cy="17" r="1"></circle>
+                        <circle cx="16" cy="17" r="1"></circle>
+                    </svg>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="header-divider"></div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">TECHNOLOGY</h1>
+            <p class="hero-subtitle">The science behind motion. Advanced engineering meets minimalist design.</p>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee" data-text="ADVANCED FABRIC SCIENCE — PRECISION ENGINEERING — NEXT GENERATION MATERIALS —">
+            <span class="marquee-content">ADVANCED FABRIC SCIENCE — PRECISION ENGINEERING — NEXT GENERATION MATERIALS —</span>
+            <span class="marquee-content">ADVANCED FABRIC SCIENCE — PRECISION ENGINEERING — NEXT GENERATION MATERIALS —</span>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="tech-section">
+        <div class="tech-content">
+            <h2 class="section-title">Monochrome Performance Architecture</h2>
+            <p class="tech-description">A design language built around movement, precision, compression mapping, breathable fibers, and next-generation fabric engineering.</p>
+            <div class="tech-features">
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Compression Mapping</h4>
+                    <p>Precision engineered zones for optimal muscle support and enhanced circulation during peak performance.</p>
+                </div>
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Breathable Fibers</h4>
+                    <p>Advanced moisture-wicking technology for peak performance in any climate or condition.</p>
+                </div>
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Movement Design</h4>
+                    <p>Ergonomic cuts for unrestricted athlete motion and complete freedom of movement.</p>
+                </div>
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Durability</h4>
+                    <p>Built to endure the most demanding training regimens with reinforced stitching and premium materials.</p>
+                </div>
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Temperature Regulation</h4>
+                    <p>Smart fabric technology that adapts to your body temperature for optimal comfort.</p>
+                </div>
+                <div class="tech-feature">
+                    <div class="feature-dot"></div>
+                    <h4>Seamless Construction</h4>
+                    <p>Zero friction design eliminates chafing for ultimate comfort during extended activity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Tech Specs Section -->
+    <section class="tech-details-section">
+        <div class="tech-details-content">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="tech-specs-grid">
+                <div class="tech-spec-card">
+                    <h3>Fabric Composition</h3>
+                    <p>Premium blend of synthetic and natural fibers for optimal performance and sustainability. Our proprietary fabric blend delivers exceptional durability without compromising on comfort.</p>
+                </div>
+                <div class="tech-spec-card">
+                    <h3>Weight Distribution</h3>
+                    <p>Engineered weight distribution system reduces strain on joints and muscles. Strategic placement of materials ensures balanced support across the entire garment.</p>
+                </div>
+                <div class="tech-spec-card">
+                    <h3>Moisture Management</h3>
+                    <p>Advanced wicking technology removes sweat 3x faster than conventional fabrics. Keep dry, stay cool, perform longer.</p>
+                </div>
+                <div class="tech-spec-card">
+                    <h3>Thermal Innovation</h3>
+                    <p>Adaptive thermal layers respond to your body's temperature. Insulation where you need it, ventilation where you want it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h3>Stay in Motion</h3>
+            <p>Get exclusive tech insights and product updates.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="your@email.com" required class="newsletter-input">
+                <button type="submit" class="btn btn-primary magnetic-btn">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Brand Philosophy</h4>
+                <p>YOKER: The intersection of minimalism and high-performance athletic wear. Monochrome by design, powerful by nature.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 YOKER. All rights reserved. Engineered for Motion.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== MODALS & OVERLAYS ==================== -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <button class="search-close" aria-label="Close search" data-command="CloseSearchOverlay">×</button>
+            <div class="search-header">
+                <input type="text" class="search-input" id="search-input" placeholder="Search technology..." aria-label="Search technology">
+            </div>
+            <div class="search-results" id="search-results">
+                <div class="search-empty">Try: compression, breathable, thermal, durability, seamless</div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close" aria-label="Close cart" data-command="CloseCart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="cart-empty">
+                <p>Your cart is empty.</p>
+                <button class="btn btn-small" data-command="GoToSection" data-target="men">Start Shopping</button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" id="checkout-btn" data-command="BeginCheckout" style="width: 100%;">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <aside class="cart-drawer wishlist-drawer" id="wishlist-drawer" aria-label="Wishlist" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Wishlist</h2>
+            <button class="cart-close" aria-label="Close wishlist" data-command="CloseWishlist">×</button>
+        </div>
+        <div class="cart-items" id="wishlist-items">
+            <div class="cart-empty">
+                <p>Your wishlist is empty.</p>
+                <button class="btn btn-small" data-command="GoToSection" data-target="men">Shop Now</button>
+            </div>
+        </div>
+    </aside>
+
+    <div class="modal" id="product-modal">
+        <div class="modal-content product-detail">
+            <button class="modal-close" aria-label="Close product details" data-command="CloseProduct">×</button>
+            <div class="product-detail-content" id="product-detail-content"></div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container" role="region" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
